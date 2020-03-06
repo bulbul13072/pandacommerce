@@ -13,8 +13,8 @@
 <body>
     <section class="top-nav-bar">
     <div class="search-box">
-        <i class="fas fa-bars" onclick="openmenu()" id="menu-btn"></i>
-        <i class="fas fa-times" onclick="closemenu()" id="close-btn"></i>
+        <i class="fas fa-bars" onclick="openMenu()" id="menu-btn"></i>
+        <i class="fas fa-times" onclick="closeMenu()" id="close-btn"></i>
     <img src="panda-commerce/logo.png" alt="logo" class="logo">
     <input type="text" class="form-control" placeholder="Find it out here!" >
     <span class="input-group-text"><i class="fas fa-search"></i></span>
@@ -132,17 +132,17 @@
    
    
    <script>
-        function openmenu()
+        function openMenu()
             {
-                document.getElementById("side-menu").style.diplay="block";
-                document.getElementById("menu-btn").style.diplay="none";
+                document.getElementById("side-menu").style.display="block";
+                document.getElementById("menu-btn").style.display="none";
                 document.getElementById("close-btn").style.diplay="block";
             }
-        function closemenu()
+        function closeMenu()
             {
-                document.getElementById("side-menu").style.diplay="none";
-                document.getElementById("menu-btn").style.diplay="block";
-                document.getElementById("close-btn").style.diplay="none";
+                document.getElementById("side-menu").style.display="none";
+                document.getElementById("menu-btn").style.display="block";
+                document.getElementById("close-btn").style.display="none";
             }
    </script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

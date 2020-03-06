@@ -99,10 +99,10 @@ body{
     width: 15%;
     font-size: 14px;
     float: left;
-    z-index: 2;
+    z-index: 1;
+    position: relative;;
     background-color: #ddd;
     display: block;
-    position: fixed;
 }
 
 .side-menu ul{
@@ -163,4 +163,12 @@ body{
 #menu-btn{
     display: block;
 }
+}
+/*-----------slider------------*/
+.slider{
+    width: 85%;
+    height: 15%;
+    padding: 0 10px;
+    float: right;
+
 }

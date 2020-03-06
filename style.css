@@ -13,7 +13,7 @@ body{
     background: #fff;
     margin-bottom: 20px;
     border-bottom: 3px solid orange;
-    z-index: 2;
+    z-index: 3;
 }
 .logo{
     height: 40px;
@@ -44,17 +44,17 @@ body{
 .fa-search{
     color: white;
 }
-.manu-bar{
+.menu-bar{
     width: 40%;
     height: 57px;
     float: right;
     color: white;
 }
-.manu-bar ul{
+.menu-bar ul{
     display: inline-flex;
     float: right;
 }
-.manu-bar ul li{
+.menu-bar ul li{
     border-left: 1px solid #fff;
     list-style-type: none;
     padding: 15px 33px;
@@ -62,7 +62,7 @@ body{
     background-color: orange;
     cursor: pointer;
 }
-.manu-bar ul li a {
+.menu-bar ul li a {
     font-size: 16px;
     font-weight: bold;
     color: white;
@@ -76,30 +76,31 @@ body{
 .top-nav-bar{
         height: 118px;
         border-bottom: 0;
+        position: relative;
     }
 
 .search-box{
     width: 100%;
 }
-.manu-bar{
+.menu-bar{
     width: 100%;
 }
-.manu-bar ul{
+.menu-bar ul{
     margin: 10px 0;
     width: 100%;
 }
-.manu-bar ul li{
+.menu-bar ul li{
     width: 100%;
     height: 57px;
 }
 }
 /*---------------side-menu----------------*/
 .side-menu{
-    height: 800px;
+    height: 730px;
     width: 15%;
     font-size: 14px;
     float: left;
-    z-index: 1;
+    z-index: 2;
     position: relative;;
     background-color: #ddd;
     display: block;
@@ -170,5 +171,53 @@ body{
     height: 15%;
     padding: 0 10px;
     float: right;
-
 }
+.carousel{
+    box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.5);
+}
+.carousel-indicators{
+    z-index: 1 !important;
+}
+@media only screen and (max-width: 980px)
+{
+    .slider{
+        width: 100%;
+        margin-left: 0;
+    }
+}
+/*---------------featured Categories-------------->*/
+.featured-categories{
+    margin: 50px 0;
+}
+.featured-categories img{
+    width: 100%;
+    padding: 20px 0;
+    transition: 1s;
+    cursor: pointer;
+    }
+    .featured-categories img:hover{
+        transform: scale(1.1);
+    }
+
+    /*---------------------------------on sale------------------------------------*/
+    .title-box{
+        background: orange;
+        color: #fff;
+        width: 180px;
+        padding: 4px 10px;
+        height: 40px;
+        margin-bottom: 30px;
+        display: flex;
+    }
+    .title-box h2{
+        font-size: 24px;
+    }
+
+    .title-box::after{
+        content: '';
+        border-top: 40px solid transparent;
+        position: absolute;
+        display: flex;
+        margin-top: -4px;
+        margin-left: 140px;
+    }

@@ -13,8 +13,8 @@
 <body>
     <section class="top-nav-bar">
     <div class="search-box">
-        <i class="fas fa-bars" onclick="openMenu()" id="menu-btn"></i>
-        <i class="fas fa-times" onclick="closeMenu()" id="close-btn"></i>
+        <i class="fas fa-bars" id="menu-btn" onclick="openMenu()"></i>
+        <i class="fas fa-times" id="close-btn" onclick="closeMenu()"></i>
     <img src="panda-commerce/logo.png" alt="logo" class="logo">
     <input type="text" class="form-control" placeholder="Find it out here!" >
     <span class="input-group-text"><i class="fas fa-search"></i></span>
@@ -136,7 +136,7 @@
             {
                 document.getElementById("side-menu").style.display="block";
                 document.getElementById("menu-btn").style.display="none";
-                document.getElementById("close-btn").style.diplay="block";
+                document.getElementById("close-btn").style.display="block";
             }
         function closeMenu()
             {
